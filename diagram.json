@@ -1,0 +1,30 @@
+{
+    "version": 1,
+    "author": "Fuad Agus Salim",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": -1.84, "left": -9.2, "attrs": {} },
+      {
+        "type": "wokwi-slide-potentiometer",
+        "id": "pot1",
+        "top": 219.64,
+        "left": -10.83,
+        "attrs": { "travelLength": "30" }
+      },
+      {
+        "type": "wokwi-slide-potentiometer",
+        "id": "pot2",
+        "top": 12.49,
+        "left": 464.47,
+        "rotate": 90,
+        "attrs": { "travelLength": "30" }
+      },
+      { "type": "wokwi-servo", "id": "servo1", "top": -4.28, "left": 295.54, "attrs": {} }
+    ],
+    "connections": [
+      [ "pot1:SIG", "uno:A0", "green", [ "h-12.46", "v-52.26", "h227.38" ] ],
+      [ "pot2:SIG", "uno:A1", "green", [ "v-26.81", "h-71.94", "v289.21", "h-283.23" ] ],
+      [ "servo1:PWM", "uno:9", "green", [ "h-13.47", "v-70.92", "h-213.25" ] ]
+    ],
+    "dependencies": {}
+  }
